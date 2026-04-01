@@ -145,6 +145,18 @@ Web features:
 - **Neutral**
   - Near-default rate and volume
 
+  ## 📌 Example
+
+**Input:**
+"I am really excited about this opportunity!"
+
+**Output:**
+- Emotion: excited  
+- Intensity: 0.85  
+- Pitch: high  
+- Rate: fast  
+- Audio File: output/empathy_20260401.mp3  
+
 ## Design Choices
 
 - **Why VADER?**
