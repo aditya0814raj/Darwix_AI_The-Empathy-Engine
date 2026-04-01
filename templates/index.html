@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empathy Engine</title>
+</head>
+<body>
+    <h1>Empathy Engine is Running 🚀</h1>
 
+    <form action="/synthesize" method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text"></textarea><br><br>
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if audio_url %}
+        <h3>Output:</h3>
+        <audio controls>
+            <source src="{{ audio_url }}" type="audio/mpeg">
+        </audio>
+    {% endif %}
+</body>
+</html>
