@@ -11,6 +11,16 @@ It satisfies the challenge requirements by:
 - Providing a FastAPI web interface with text input and embedded audio playback.
 - Applying sentence-level dynamic emotion shifts for mixed-emotion input.
 
+ ## 🔄 Workflow
+
+1. User provides input text  
+2. Sentiment is analyzed using VADER  
+3. Emotion is classified (happy, sad, angry, etc.)  
+4. Emotion intensity is calculated  
+5. Voice parameters (rate, pitch, volume) are adjusted  
+6. Audio is generated using neural TTS (or fallback)  
+7. Output audio file is produced  
+
 ## How It Works
 
 1. **Emotion Detection**
